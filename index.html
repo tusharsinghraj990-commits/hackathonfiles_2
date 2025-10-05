@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar -->
+
+  <video class="backSet" width="640" height="360" autoplay muted loop>
+    <source src="animation.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div id="sidebar">
+    <h2>Dashboard</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Analytics</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <button id="menuBtn">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </button>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>SPACE BIOLOGY RESEARCH</h1>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button>Search</button>
+    </div>
+    <div id="result"></div>
+  </div>
+
+  <!-- Study topics -->
+  <div class="topic">
+    <div class="topic101">
+      <img src="gravity.webp" alt="Microgravity">
+      <div class="text-box1">
+        <h2>Effect of microgravity in body</h2>
+        <p>Microgravity affects astronauts' bodies significantly, impacting bones and muscles.</p>
+        <a href="#">EXPLORE MORE</a>
+      </div>
+    </div>
+    <div class="topic101">
+      <div class="text-box2">
+        <h2>Plant growth in space</h2>
+        <p>Plants face challenges surviving in space due to the absence of air and gravity.</p>
+        <a href="#">EXPLORE MORE</a>
+      </div>
+      <img src="plant.webp" alt="Plant Growth">
+    </div>
+    <div class="topic101">
+      <img src="nutrients.webp" alt="Space Nutrients">
+      <div class="text-box1">
+        <h2>Space nutrients</h2>
+        <p>Fresh vegetables and fruits are scarce in space, requiring alternative solutions.</p>
+        <a href="#">EXPLORE MORE</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot">
+      <p>jr.minds</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

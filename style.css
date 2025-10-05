@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+}
+
+/* Sidebar */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #1e40af;
+  color: white;
+  padding: 20px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+#sidebar.active {
+  transform: translateX(0);
+}
+
+#sidebar h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar ul li {
+  margin-bottom: 15px;
+}
+
+#sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger Menu */
+#menuBtn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 50;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #111;
+  margin: 5px 0;
+}
+
+/* Main Content */
+.backSet{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 55vh;
+  object-fit: cover;
+  z-index: -1;
+
+}
+
+
+.main-content {
+  text-align: center;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.main-content h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  display: inline-block;
+    backdrop-filter: blur(10px);          /* blur effect */
+  -webkit-backdrop-filter: blur(10px);  /* Safari support */
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #374bc1;
+}
+
+#result {
+  margin: 20px auto;
+  max-width: 600px;
+  border: 1px solid #1e40af;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: white;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+#result h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: #1e40af;
+}
+
+#result h4, #result h5 {
+  margin: 10px 0;
+  color: #1e40af;
+}
+
+#result p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+#result .result-list {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+#result .result-list li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+#result .loading {
+  color: #555;
+  font-style: italic;
+}
+
+#result .error {
+  color: #d32f2f;
+}
+
+/* Study Topics */
+.topic {
+  margin-top: 100px;
+
+}
+
+.topic101 {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.topic101 img {
+  height: 250px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.text-box1, .text-box2 {
+  max-width: 400px;
+}
+
+.text-box1 h2, .text-box2 h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.text-box1 p, .text-box2 p {
+  margin-bottom: 10px;
+}
+
+.text-box1 a, .text-box2 a {
+  color: #1e40af;
+  text-decoration: none;
+}
+
+.text-box1 a:hover, .text-box2 a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.foot {
+  background-color: #1e40af;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
